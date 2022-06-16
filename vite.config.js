@@ -1,3 +1,3 @@
 export default {
-    base: '/ar-test'
+    base: '/ar-test/',
 }
