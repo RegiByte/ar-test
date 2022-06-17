@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp gearhead.gltf dist",
+    "build": "vite build && cp gearhead.gltf dist && cp horshack.patt dist",
     "preview": "vite preview",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
