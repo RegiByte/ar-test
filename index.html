@@ -6,16 +6,29 @@
 
 <body style="margin : 0px; overflow: hidden;">
 <a-scene embedded arjs>
-  <a-marker url="/ar-test/horshack.patt" type="pattern">
-    <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-    <a-entity
-            position="0 0 0"
-            rotation="0 0 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="/ar-test/gearhead.gltf"
-    ></a-entity>
-  </a-marker>
-  <a-entity camera></a-entity>
+    <a-marker
+            size="0.5"
+            url="/ar-test/horshack.patt"
+            type="pattern">
+        <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+        <a-entity
+                position="0 0 0"
+                rotation="0 0 0"
+                scale="0.1 0.1 0.1"
+                gltf-model="/ar-test/gearhead.gltf"
+        ></a-entity>
+    </a-marker>
+
+    <a-marker
+            preset="hiro">
+        <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+        <a-box
+                position="0 0 0"
+                rotation="0 0 0"
+                color="yellow"
+        ></a-box>
+    </a-marker>
+    <a-entity camera></a-entity>
 </a-scene>
 </body>
 </html>
